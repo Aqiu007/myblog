@@ -1,55 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>111</title>
-    <url>/2021/03/06/111/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>分类1</category>
-        <category>分类11</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>222</title>
-    <url>/2021/03/06/222/</url>
-    <content><![CDATA[]]></content>
-      <categories>
-        <category>分类1</category>
-        <category>分类12</category>
-      </categories>
-      <tags>
-        <tag>标签1</tag>
-        <tag>标签3</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Hello World</title>
-    <url>/2021/03/06/hello-world/</url>
-    <content><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h1 id="标题1"><a href="#标题1" class="headerlink" title="标题1"></a>标题1</h1><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h4 id="标题4444444444444444444444444444"><a href="#标题4444444444444444444444444444" class="headerlink" title="标题4444444444444444444444444444"></a>标题4444444444444444444444444444</h4><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+    <title>接口自动化平台设计方案</title>
+    <url>/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/</url>
+    <content><![CDATA[<h2 id="1-技术框架"><a href="#1-技术框架" class="headerlink" title="1. 技术框架"></a>1. 技术框架</h2><p>从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架</p>
+<p>前端：vue + element-ui</p>
+<p>后端：python + Django + restframework</p>
+<p>测试框架 HTTPrunner</p>
+<h2 id="2-功能模块"><a href="#2-功能模块" class="headerlink" title="2. 功能模块"></a>2. 功能模块</h2><h3 id="2-1-环境管理"><a href="#2-1-环境管理" class="headerlink" title="2.1 环境管理"></a>2.1 环境管理</h3><p>新增环境、拷贝环境</p>
+<p>编辑环境变量</p>
+<h3 id="2-2-接口管理"><a href="#2-2-接口管理" class="headerlink" title="2.2 接口管理"></a>2.2 接口管理</h3><p>分模块、版本管理接口</p>
+<p>接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信息，支持在线调试</p>
+<p>接口配置，配置请求的必要信息和响应断言、数据库校验等</p>
+<h3 id="2-3-测试用例"><a href="#2-3-测试用例" class="headerlink" title="2.3 测试用例"></a>2.3 测试用例</h3><p>每个测试用例就是由一个或多个接口组成</p>
+<p>包含关联模块、用例标题、用例步骤、创建人、创建时间、修改时间等信息</p>
+<h3 id="2-4-测试计划"><a href="#2-4-测试计划" class="headerlink" title="2.4 测试计划"></a>2.4 测试计划</h3><p>每个测试计划就是由一个或多个用例组成</p>
+<p>包含计划标题、用例集、负责人、创建人、创建时间等信息</p>
+<h3 id="2-5-Mock管理"><a href="#2-5-Mock管理" class="headerlink" title="2.5 Mock管理"></a>2.5 Mock管理</h3><p>用于模拟响应</p>
+<h3 id="2-6-告警管理"><a href="#2-6-告警管理" class="headerlink" title="2.6 告警管理"></a>2.6 告警管理</h3><p>邮件告警、短信告警、企微告警</p>
+<h3 id="2-7-定时任务"><a href="#2-7-定时任务" class="headerlink" title="2.7 定时任务"></a>2.7 定时任务</h3><p>定时执行自动化测试用例</p>
+<h3 id="2-8-函数管理"><a href="#2-8-函数管理" class="headerlink" title="2.8 函数管理"></a>2.8 函数管理</h3><p>提供已经封装好的函数，比如获取当前时间戳、加减乘除等</p>
+<p>支持自定义函数</p>
+<h3 id="2-9-用户管理（超级管理员）"><a href="#2-9-用户管理（超级管理员）" class="headerlink" title="2.9 用户管理（超级管理员）"></a>2.9 用户管理（超级管理员）</h3><p>添加用户，修改用户信息</p>
+<h3 id="2-10-项目管理（超级管理员）"><a href="#2-10-项目管理（超级管理员）" class="headerlink" title="2.10 项目管理（超级管理员）"></a>2.10 项目管理（超级管理员）</h3><p>添加项目，编辑项目</p>
+<h2 id="3-新增亮点"><a href="#3-新增亮点" class="headerlink" title="3. 新增亮点"></a>3. 新增亮点</h2><h3 id="3-1-分布式执行测试"><a href="#3-1-分布式执行测试" class="headerlink" title="3.1 分布式执行测试"></a>3.1 分布式执行测试</h3><p>使用celery进行任务调度</p>
+<h3 id="3-2-权限管理"><a href="#3-2-权限管理" class="headerlink" title="3.2 权限管理"></a>3.2 权限管理</h3><p>用户进行分组，权限按照分组设计</p>
+<h3 id="3-3-数据库校验"><a href="#3-3-数据库校验" class="headerlink" title="3.3 数据库校验"></a>3.3 数据库校验</h3><p>可以进行数据库校验</p>
+<h3 id="3-4-postman生成测试用例"><a href="#3-4-postman生成测试用例" class="headerlink" title="3.4 postman生成测试用例"></a>3.4 postman生成测试用例</h3><p>可以将postman脚本一键导入生成用例</p>
 ]]></content>
       <categories>
-        <category>分类2</category>
+        <category>接口自动化平台</category>
+        <category>设计文档</category>
       </categories>
       <tags>
-        <tag>标签1</tag>
-        <tag>标签2</tag>
-        <tag>标签3</tag>
+        <tag>接口自动化</tag>
+        <tag>httprunner</tag>
+        <tag>django</tag>
       </tags>
   </entry>
 </search>
