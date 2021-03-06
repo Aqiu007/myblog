@@ -21,12 +21,12 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"www.17hf.online","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="1. 技术框架从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架 前端：vue + element-ui 后端：python + Django + restframework 测试框架 HTTPrunner 2. 功能模块2.1 环境管理新增环境、拷贝环境 编辑环境变量 2.2 接口管理分模块、版本管理接口 接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信">
 <meta property="og:type" content="article">
 <meta property="og:title" content="接口自动化平台设计方案">
-<meta property="og:url" content="http://example.com/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/index.html">
+<meta property="og:url" content="http://www.17hf.online/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/index.html">
 <meta property="og:site_name" content="阿丘的博客">
 <meta property="og:description" content="1. 技术框架从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架 前端：vue + element-ui 后端：python + Django + restframework 测试框架 HTTPrunner 2. 功能模块2.1 环境管理新增环境、拷贝环境 编辑环境变量 2.2 接口管理分模块、版本管理接口 接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信">
 <meta property="og:locale" content="zh_CN">
@@ -39,7 +39,7 @@
 <meta name="twitter:card" content="summary">
 
 
-<link rel="canonical" href="http://example.com/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/">
+<link rel="canonical" href="http://www.17hf.online/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/">
 
 
 <script class="page-configurations">
@@ -270,7 +270,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/">
+    <link itemprop="mainEntityOfPage" href="http://www.17hf.online/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -386,7 +386,7 @@
   </li>
   <li class="post-copyright-link">
       <strong>本文链接：</strong>
-      <a href="http://example.com/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="接口自动化平台设计方案">http://example.com/2021/03/06/接口自动化平台/接口自动化平台设计方案/</a>
+      <a href="http://www.17hf.online/2021/03/06/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0/%E6%8E%A5%E5%8F%A3%E8%87%AA%E5%8A%A8%E5%8C%96%E5%B9%B3%E5%8F%B0%E8%AE%BE%E8%AE%A1%E6%96%B9%E6%A1%88/" title="接口自动化平台设计方案">http://www.17hf.online/2021/03/06/接口自动化平台/接口自动化平台设计方案/</a>
   </li>
   <li class="post-copyright-license">
     <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/zh-CN" rel="noopener" target="_blank"><i class="fab fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
