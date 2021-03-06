@@ -182,7 +182,7 @@ body {
   background: var(--body-bg-color);
   color: var(--text-color);
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 0.9em;
+  font-size: 0.95em;
   line-height: 2;
   min-height: 100%;
   position: relative;
@@ -200,22 +200,22 @@ h6 {
   margin: 20px 0 15px;
 }
 h1 {
-  font-size: 1.395em;
+  font-size: 1.425em;
 }
 h2 {
-  font-size: 1.265em;
+  font-size: 1.275em;
 }
 h3 {
-  font-size: 1.135em;
+  font-size: 1.125em;
 }
 h4 {
-  font-size: 1.005em;
+  font-size: 0.975em;
 }
 h5 {
-  font-size: 0.875em;
+  font-size: 0.825em;
 }
 h6 {
-  font-size: 0.745em;
+  font-size: 0.675em;
 }
 p {
   margin: 0 0 20px;
@@ -270,7 +270,7 @@ dd {
 table {
   border-collapse: collapse;
   border-spacing: 0;
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin: 0 0 20px;
   width: 100%;
 }
@@ -303,7 +303,7 @@ td {
   border-radius: 2px;
   color: var(--btn-default-color);
   display: inline-block;
-  font-size: 0.775em;
+  font-size: 0.825em;
   line-height: 2;
   padding: 0 20px;
   transition: background-color 0.2s ease-in-out;
@@ -465,7 +465,7 @@ pre:hover .copy-btn {
   background-image: linear-gradient(#fcfcfc, #eee);
   border: 1px solid #d5d5d5;
   border-radius: 3px;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
   right: 4px;
   top: 8px;
 }
@@ -487,7 +487,7 @@ code {
 }
 code {
   border-radius: 3px;
-  font-size: 0.775em;
+  font-size: 0.825em;
   padding: 2px 4px;
   overflow-wrap: break-word;
 }
@@ -522,7 +522,7 @@ pre figcaption {
   background: var(--highlight-gutter-background);
   color: var(--highlight-foreground);
   display: flow-root;
-  font-size: 0.775em;
+  font-size: 0.825em;
   line-height: 1.2;
   padding: 0.5em;
 }
@@ -1214,7 +1214,7 @@ pre code {
 }
 .site-subtitle {
   color: #ddd;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
   margin: 10px 0;
 }
 .use-motion .site-title,
@@ -1277,7 +1277,7 @@ pre code {
 .menu-item a {
   border-bottom: 0;
   display: block;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
   transition: border-color 0.2s ease-in-out;
 }
 .menu-item a:hover,
@@ -1339,11 +1339,11 @@ pre code {
 }
 .site-description {
   color: #999;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
   margin-top: 0;
 }
 .links-of-author a {
-  font-size: 0.7125em;
+  font-size: 0.7625em;
 }
 .links-of-author .fa,
 .links-of-author .fab,
@@ -1379,10 +1379,10 @@ pre code {
   color: #fff;
 }
 .links-of-blogroll {
-  font-size: 0.7125em;
+  font-size: 0.7625em;
 }
 .links-of-blogroll-title {
-  font-size: 0.775em;
+  font-size: 0.825em;
   font-weight: 600;
   margin-top: 0;
 }
@@ -1427,7 +1427,7 @@ pre code {
   color: var(--text-color);
   cursor: pointer;
   display: inline-block;
-  font-size: 0.775em;
+  font-size: 0.825em;
 }
 .sidebar-nav li.sidebar-nav-overview {
   margin-left: 10px;
@@ -1514,7 +1514,7 @@ pre code {
   transform: rotate(-45deg);
 }
 .post-toc {
-  font-size: 0.775em;
+  font-size: 0.825em;
 }
 .post-toc ol {
   list-style: none;
@@ -1571,16 +1571,16 @@ pre code {
 }
 .site-state-item-count {
   display: block;
-  font-size: 0.9em;
+  font-size: 0.95em;
   font-weight: 600;
 }
 .site-state-item-name {
   color: #999;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
 }
 .footer {
   color: #999;
-  font-size: 0.775em;
+  font-size: 0.825em;
   padding: 20px 0;
 }
 .footer.footer-fixed {
@@ -1613,7 +1613,7 @@ pre code {
 }
 .languages {
   display: inline-block;
-  font-size: 1.025em;
+  font-size: 1.075em;
   position: relative;
 }
 .languages .lang-select-label span {
@@ -1796,7 +1796,7 @@ pre code {
   }
 }
 .posts-collapse .post-content .collection-title {
-  font-size: 1.025em;
+  font-size: 1.075em;
   position: relative;
 }
 .posts-collapse .post-content .collection-title::before {
@@ -1812,7 +1812,7 @@ pre code {
   width: 10px;
 }
 .posts-collapse .post-content .collection-year {
-  font-size: 1.4em;
+  font-size: 1.45em;
   font-weight: bold;
   margin: 60px 0;
   position: relative;
@@ -1848,7 +1848,7 @@ pre code {
   border: 1px solid #fff;
   left: -6px;
   position: absolute;
-  top: 0.65em;
+  top: 0.7em;
   transition: background 0.2s ease-in-out;
   border-radius: 50%;
   content: ' ';
@@ -1863,7 +1863,7 @@ pre code {
 }
 .posts-collapse .post-content .post-meta-container {
   display: inline;
-  font-size: 0.65em;
+  font-size: 0.7em;
   margin-right: 10px;
 }
 .posts-collapse .post-content .post-title {
@@ -1874,7 +1874,7 @@ pre code {
   color: var(--link-color);
 }
 .posts-collapse .post-content .post-title .fa-external-link-alt {
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin-left: 5px;
 }
 .posts-collapse .post-content::before {
@@ -1892,7 +1892,7 @@ pre code {
 }
 @media (min-width: 1200px) {
   .post-body {
-    font-size: 1.025em;
+    font-size: 1.075em;
   }
 }
 @media (min-width: 992px) {
@@ -1928,7 +1928,7 @@ pre code {
   border-bottom-style: none;
   color: inherit;
   float: right;
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin-left: 10px;
   opacity: 0;
 }
@@ -1977,13 +1977,13 @@ pre code {
   opacity: 1;
 }
 .post-body .exturl .fa {
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin-left: 4px;
 }
 .post-body .image-caption,
 .post-body .figure .caption {
   color: #999;
-  font-size: 0.775em;
+  font-size: 0.825em;
   font-weight: bold;
   line-height: 1;
   margin: -20px auto 15px;
@@ -2040,12 +2040,12 @@ pre code {
   margin: 15px 0;
 }
 .posts-expand .post-header {
-  font-size: 1.025em;
+  font-size: 1.075em;
   margin-bottom: 60px;
   text-align: center;
 }
 .posts-expand .post-title {
-  font-size: 1.4em;
+  font-size: 1.45em;
   font-weight: normal;
   margin: initial;
   overflow-wrap: break-word;
@@ -2071,7 +2071,7 @@ pre code {
   transform: scaleX(1);
 }
 .posts-expand .post-title-link .fa-external-link-alt {
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin-left: 5px;
 }
 .post-sticky-flag {
@@ -2082,11 +2082,11 @@ pre code {
 .posts-expand .post-meta-container {
   color: #999;
   font-family: Lato, 'PingFang SC', 'Microsoft YaHei', sans-serif;
-  font-size: 0.65em;
+  font-size: 0.7em;
   margin-top: 3px;
 }
 .posts-expand .post-meta-container .post-description {
-  font-size: 0.775em;
+  font-size: 0.825em;
   margin-top: 2px;
 }
 .posts-expand .post-meta-container time {
@@ -2124,14 +2124,14 @@ pre code {
 .post-nav-item a {
   border-bottom: 0;
   display: block;
-  font-size: 0.775em;
+  font-size: 0.825em;
   line-height: 1.6;
 }
 .post-nav-item a:active {
   top: 2px;
 }
 .post-nav-item .fa {
-  font-size: 0.65em;
+  font-size: 0.7em;
 }
 .post-nav-item:first-child .fa {
   margin-right: 5px;
@@ -2169,7 +2169,7 @@ pre code {
 }
 .post-tags a {
   display: inline-block;
-  font-size: 0.7125em;
+  font-size: 0.7625em;
 }
 .post-tags a:not(:last-child) {
   margin-right: 10px;
@@ -2188,7 +2188,7 @@ pre code {
 }
 .social-like {
   display: flex;
-  font-size: 0.775em;
+  font-size: 0.825em;
   justify-content: center;
   text-align: center;
 }
@@ -2411,7 +2411,7 @@ pre code {
   }
 }
 ul.breadcrumb {
-  font-size: 0.65em;
+  font-size: 0.7em;
   list-style: none;
   margin: 1em 0;
   padding: 0 2em;
@@ -2589,7 +2589,7 @@ mark.search-keyword {
 }
 .popular-posts-header {
   border-bottom: 1px solid #eee;
-  font-size: 1.025em;
+  font-size: 1.075em;
   margin-bottom: 10px;
   margin-top: 60px;
 }
@@ -2600,7 +2600,7 @@ mark.search-keyword {
   margin-left: 2em;
 }
 .popular-posts .popular-posts-item .popular-posts-title {
-  font-size: 0.775em;
+  font-size: 0.825em;
   font-weight: normal;
   line-height: 2.4;
   margin: 0;
