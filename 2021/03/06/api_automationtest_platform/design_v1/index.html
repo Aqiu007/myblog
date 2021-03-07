@@ -21,7 +21,7 @@
 
 <script class="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"www.17hf.online","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
+    var CONFIG = {"hostname":"www.17hf.online","root":"/","images":"/images","scheme":"Gemini","version":"8.2.2","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":true,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":"changyan","storage":true,"lazyload":false,"nav":null,"activeClass":"changyan"},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"},"path":"/search.xml","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}};
   </script>
 <meta name="description" content="1. 技术框架从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架前端：vue + element-ui后端：python + Django + restframework测试框架 HTTPrunner 2. 功能模块2.1 环境管理新增环境、拷贝环境编辑环境变量 2.2 接口管理分模块、版本管理接口接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信息，支持在">
 <meta property="og:type" content="article">
@@ -312,6 +312,29 @@
     </span>
 
   
+    <span class="post-meta-item" title="阅读次数" id="busuanzi_container_page_pv" style="display: none;">
+      <span class="post-meta-item-icon">
+        <i class="far fa-eye"></i>
+      </span>
+      <span class="post-meta-item-text">阅读次数：</span>
+      <span id="busuanzi_value_page_pv"></span>
+    </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Changyan：</span>
+    
+    
+      <a title="changyan" href="/2021/03/06/api_automationtest_platform/design_v1/#SOHUCS" itemprop="discussionUrl">
+        <span id="changyan_count_unit" class="post-comments-count hc-comment-count" data-xid="2021/03/06/api_automationtest_platform/design_v1/" itemprop="commentCount"></span>
+      </a>
+    
+  </span>
+  
+  
 </div>
 
         </div>
@@ -404,6 +427,7 @@
 
 
 
+    <div class="comments" id="SOHUCS"></div>
 
 <script>
   window.addEventListener('tabs:register', () => {
@@ -439,17 +463,9 @@
   <span class="with-love">
     <i class="fa fa-user"></i>
   </span>
-  <span class="author" itemprop="copyrightHolder">版权归属 @阿丘</span>
+  <span class="author" itemprop="copyrightHolder">阿丘</span>
 </div>
 <div class="busuanzi-count">
-    <span class="post-meta-item" id="busuanzi_container_site_uv" style="display: none;">
-      <span class="post-meta-item-icon">
-        <i class="fa fa-user"></i>
-      </span>
-      <span class="site-uv" title="总访客量">
-        <span id="busuanzi_value_site_uv"></span>
-      </span>
-    </span>
     <span class="post-meta-item" id="busuanzi_container_site_pv" style="display: none;">
       <span class="post-meta-item-icon">
         <i class="fa fa-eye"></i>
@@ -481,6 +497,18 @@
 
 
 
+
+  <script>
+  NexT.utils.loadComments('#SOHUCS', () => {
+    NexT.utils.getScript('https://changyan.sohu.com/upload/changyan.js', () => {
+      window.changyan.api.config({
+        appid: 'cyvlgoU1a',
+        conf : '1cfcfccba06503c4bda214d3b834cf45'
+      });
+    });
+  });
+  </script>
+  <script src="https://assets.changyan.sohu.com/upload/plugins/plugins.count.js"></script>
 
 </body>
 </html>
