@@ -1,36 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>接口自动化平台设计方案v1.0</title>
-    <url>/2021/03/06/api_automationtest_platform/design_v1/</url>
-    <content><![CDATA[<h2 id="1-技术框架"><a href="#1-技术框架" class="headerlink" title="1. 技术框架"></a>1. 技术框架</h2><p>从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架<br>前端：vue + element-ui<br>后端：python + Django + restframework<br>测试框架 HTTPrunner</p>
-<h2 id="2-功能模块"><a href="#2-功能模块" class="headerlink" title="2. 功能模块"></a>2. 功能模块</h2><h3 id="2-1-环境管理"><a href="#2-1-环境管理" class="headerlink" title="2.1 环境管理"></a>2.1 环境管理</h3><p>新增环境、拷贝环境<br>编辑环境变量</p>
-<h3 id="2-2-接口管理"><a href="#2-2-接口管理" class="headerlink" title="2.2 接口管理"></a>2.2 接口管理</h3><p>分模块、版本管理接口<br>接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信息，支持在线调试<br>接口配置，配置请求的必要信息和响应断言、数据库校验等</p>
-<span id="more"></span>
-<h3 id="2-3-测试用例"><a href="#2-3-测试用例" class="headerlink" title="2.3 测试用例"></a>2.3 测试用例</h3><p>每个测试用例就是由一个或多个接口组成<br>包含关联模块、用例标题、用例步骤、创建人、创建时间、修改时间等信息</p>
-<h3 id="2-4-测试计划"><a href="#2-4-测试计划" class="headerlink" title="2.4 测试计划"></a>2.4 测试计划</h3><p>每个测试计划就是由一个或多个用例组成<br>包含计划标题、用例集、负责人、创建人、创建时间等信息</p>
-<h3 id="2-5-Mock管理"><a href="#2-5-Mock管理" class="headerlink" title="2.5 Mock管理"></a>2.5 Mock管理</h3><p>用于模拟响应</p>
-<h3 id="2-6-告警管理"><a href="#2-6-告警管理" class="headerlink" title="2.6 告警管理"></a>2.6 告警管理</h3><p>邮件告警、短信告警、企微告警</p>
-<h3 id="2-7-定时任务"><a href="#2-7-定时任务" class="headerlink" title="2.7 定时任务"></a>2.7 定时任务</h3><p>定时执行自动化测试用例</p>
-<h3 id="2-8-函数管理"><a href="#2-8-函数管理" class="headerlink" title="2.8 函数管理"></a>2.8 函数管理</h3><p>提供已经封装好的函数，比如获取当前时间戳、加减乘除等<br>支持自定义函数</p>
-<h3 id="2-9-用户管理（超级管理员）"><a href="#2-9-用户管理（超级管理员）" class="headerlink" title="2.9 用户管理（超级管理员）"></a>2.9 用户管理（超级管理员）</h3><p>添加用户，修改用户信息</p>
-<h3 id="2-10-项目管理（超级管理员）"><a href="#2-10-项目管理（超级管理员）" class="headerlink" title="2.10 项目管理（超级管理员）"></a>2.10 项目管理（超级管理员）</h3><p>添加项目，编辑项目</p>
-<h2 id="3-其他模块"><a href="#3-其他模块" class="headerlink" title="3. 其他模块"></a>3. 其他模块</h2><h3 id="3-1-分布式执行测试"><a href="#3-1-分布式执行测试" class="headerlink" title="3.1 分布式执行测试"></a>3.1 分布式执行测试</h3><p>使用celery进行任务调度</p>
-<h3 id="3-2-权限管理"><a href="#3-2-权限管理" class="headerlink" title="3.2 权限管理"></a>3.2 权限管理</h3><p>用户进行分组，权限按照分组设计</p>
-<h3 id="3-3-数据库校验"><a href="#3-3-数据库校验" class="headerlink" title="3.3 数据库校验"></a>3.3 数据库校验</h3><p>可以进行数据库校验</p>
-<h3 id="3-4-postman生成测试用例"><a href="#3-4-postman生成测试用例" class="headerlink" title="3.4 postman生成测试用例"></a>3.4 postman生成测试用例</h3><p>可以将postman脚本一键导入生成用例</p>
-]]></content>
-      <categories>
-        <category>1. 接口自动化平台</category>
-        <category>设计文档</category>
-      </categories>
-      <tags>
-        <tag>接口自动化</tag>
-        <tag>HttpRunner</tag>
-        <tag>Django</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>【Python】常用方法二次封装（二）</title>
     <url>/2021/03/06/python/frequently_used_method/file-path/</url>
     <content><![CDATA[<h2 id="文件及路径相关方法封装"><a href="#文件及路径相关方法封装" class="headerlink" title="文件及路径相关方法封装"></a>文件及路径相关方法封装</h2><h3 id="1-获取目录下的所有文件"><a href="#1-获取目录下的所有文件" class="headerlink" title="1. 获取目录下的所有文件"></a>1. 获取目录下的所有文件</h3><figure class="highlight python"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_all_files_path</span>(<span class="params">path</span>) -&gt; list:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取某个目录下所有的文件路径（包括隐藏文件、子目录下的文件）</span></span><br><span class="line"><span class="string">    :param path: 绝对路径</span></span><br><span class="line"><span class="string">    :return: 返回每个文件的绝对路径</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    all_files = []</span><br><span class="line">    p = os.path.abspath(path)</span><br><span class="line">    <span class="keyword">for</span> path, dir_names, files <span class="keyword">in</span> os.walk(p):</span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">            all_files.append(os.path.join(path, file))</span><br><span class="line">    <span class="keyword">return</span> all_files</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_all_files</span>(<span class="params">path</span>) -&gt; list:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    获取某个目录下所有的文件（包括隐藏文件、子目录下的文件）</span></span><br><span class="line"><span class="string">    :param path: 绝对路径</span></span><br><span class="line"><span class="string">    :return: 返回每个文件的文件名</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    all_files = []</span><br><span class="line">    p = os.path.abspath(path)</span><br><span class="line">    <span class="keyword">for</span> path, dir_names, files <span class="keyword">in</span> os.walk(p):</span><br><span class="line">        <span class="keyword">for</span> file <span class="keyword">in</span> files:</span><br><span class="line">            all_files.append(file)</span><br><span class="line">    <span class="keyword">return</span> all_files</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_files</span>(<span class="params">path</span>) -&gt; list:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    :param path: 绝对路径</span></span><br><span class="line"><span class="string">    :return: 返回路径下的所有文件名(含隐藏文件)，不含子目录中的文件</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    all_files = []</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> os.listdir(path):</span><br><span class="line">        <span class="keyword">if</span> os.path.isfile(p):</span><br><span class="line">            all_files.append(p)</span><br><span class="line">    <span class="keyword">return</span> all_files</span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">get_current_path_files</span>() -&gt; list:</span></span><br><span class="line">    <span class="string">&quot;&quot;&quot;</span></span><br><span class="line"><span class="string">    :return: 返回同级目录下所有文件名，不含子目录中的文件</span></span><br><span class="line"><span class="string">    &quot;&quot;&quot;</span></span><br><span class="line">    all_files = []</span><br><span class="line">    <span class="keyword">for</span> p <span class="keyword">in</span> os.listdir(os.path.dirname(__file__)):</span><br><span class="line">        <span class="keyword">if</span> os.path.isfile(p):</span><br><span class="line">            all_files.append(p)</span><br><span class="line">    <span class="keyword">return</span> all_files</span><br></pre></td></tr></table></figure>
@@ -61,6 +31,36 @@
       <tags>
         <tag>Python</tag>
         <tag>方法封装</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>接口自动化平台设计方案v1.0</title>
+    <url>/2021/03/06/api_automationtest_platform/design_v1/</url>
+    <content><![CDATA[<h2 id="1-技术框架"><a href="#1-技术框架" class="headerlink" title="1. 技术框架"></a>1. 技术框架</h2><p>从自己的技术栈、目前流行的框架、开发效率等方面综合考虑，选择了以下框架<br>前端：vue + element-ui<br>后端：python + Django + restframework<br>测试框架 HTTPrunner</p>
+<h2 id="2-功能模块"><a href="#2-功能模块" class="headerlink" title="2. 功能模块"></a>2. 功能模块</h2><h3 id="2-1-环境管理"><a href="#2-1-环境管理" class="headerlink" title="2.1 环境管理"></a>2.1 环境管理</h3><p>新增环境、拷贝环境<br>编辑环境变量</p>
+<h3 id="2-2-接口管理"><a href="#2-2-接口管理" class="headerlink" title="2.2 接口管理"></a>2.2 接口管理</h3><p>分模块、版本管理接口<br>接口文档，包含URI、请求方法、请求头、请求体、响应主体、demo等信息，支持在线调试<br>接口配置，配置请求的必要信息和响应断言、数据库校验等</p>
+<span id="more"></span>
+<h3 id="2-3-测试用例"><a href="#2-3-测试用例" class="headerlink" title="2.3 测试用例"></a>2.3 测试用例</h3><p>每个测试用例就是由一个或多个接口组成<br>包含关联模块、用例标题、用例步骤、创建人、创建时间、修改时间等信息</p>
+<h3 id="2-4-测试计划"><a href="#2-4-测试计划" class="headerlink" title="2.4 测试计划"></a>2.4 测试计划</h3><p>每个测试计划就是由一个或多个用例组成<br>包含计划标题、用例集、负责人、创建人、创建时间等信息</p>
+<h3 id="2-5-Mock管理"><a href="#2-5-Mock管理" class="headerlink" title="2.5 Mock管理"></a>2.5 Mock管理</h3><p>用于模拟响应</p>
+<h3 id="2-6-告警管理"><a href="#2-6-告警管理" class="headerlink" title="2.6 告警管理"></a>2.6 告警管理</h3><p>邮件告警、短信告警、企微告警</p>
+<h3 id="2-7-定时任务"><a href="#2-7-定时任务" class="headerlink" title="2.7 定时任务"></a>2.7 定时任务</h3><p>定时执行自动化测试用例</p>
+<h3 id="2-8-函数管理"><a href="#2-8-函数管理" class="headerlink" title="2.8 函数管理"></a>2.8 函数管理</h3><p>提供已经封装好的函数，比如获取当前时间戳、加减乘除等<br>支持自定义函数</p>
+<h3 id="2-9-用户管理（超级管理员）"><a href="#2-9-用户管理（超级管理员）" class="headerlink" title="2.9 用户管理（超级管理员）"></a>2.9 用户管理（超级管理员）</h3><p>添加用户，修改用户信息</p>
+<h3 id="2-10-项目管理（超级管理员）"><a href="#2-10-项目管理（超级管理员）" class="headerlink" title="2.10 项目管理（超级管理员）"></a>2.10 项目管理（超级管理员）</h3><p>添加项目，编辑项目</p>
+<h2 id="3-其他模块"><a href="#3-其他模块" class="headerlink" title="3. 其他模块"></a>3. 其他模块</h2><h3 id="3-1-分布式执行测试"><a href="#3-1-分布式执行测试" class="headerlink" title="3.1 分布式执行测试"></a>3.1 分布式执行测试</h3><p>使用celery进行任务调度</p>
+<h3 id="3-2-权限管理"><a href="#3-2-权限管理" class="headerlink" title="3.2 权限管理"></a>3.2 权限管理</h3><p>用户进行分组，权限按照分组设计</p>
+<h3 id="3-3-数据库校验"><a href="#3-3-数据库校验" class="headerlink" title="3.3 数据库校验"></a>3.3 数据库校验</h3><p>可以进行数据库校验</p>
+<h3 id="3-4-postman生成测试用例"><a href="#3-4-postman生成测试用例" class="headerlink" title="3.4 postman生成测试用例"></a>3.4 postman生成测试用例</h3><p>可以将postman脚本一键导入生成用例</p>
+]]></content>
+      <categories>
+        <category>1. 接口自动化平台</category>
+        <category>设计文档</category>
+      </categories>
+      <tags>
+        <tag>接口自动化</tag>
+        <tag>HttpRunner</tag>
+        <tag>Django</tag>
       </tags>
   </entry>
   <entry>
